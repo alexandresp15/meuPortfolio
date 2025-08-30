@@ -4,9 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Alexandre S. Pereira</title>
 </head>
 <body>
+    <header></header>
+    <main>
+        <h1>Bem vindo ao meu portfólio</h1>
+        <!-- Menu de navegação -->
+        <nav>
+            <a onclick="navegar('home')">Home</a>
+            <a onclick="navegar('sobre')">Sobre</a>
+            <a onclick="navegar('contato')">Contato</a>
+        </nav>
+  
+        <!-- Onde o conteúdo muda -->
+        <div id="content"></div>
+    </main>
+    <footer></footer>
 
+    <script src="app.js" defer></script>
 </body>
 </html>
