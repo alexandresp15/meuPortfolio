@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Alexandre S. Pereira</title>
+    <title>SPA com Estilo</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header></header>
-    <main>
-        <h1>Bem vindo ao meu portfólio</h1>
-        <!-- Menu de navegação -->
-        <nav>
-            <a onclick="navegar('home')">Home</a>
-            <a onclick="navegar('sobre')">Sobre</a>
-            <a onclick="navegar('contato')">Contato</a>
-        </nav>
-  
-        <!-- Onde o conteúdo muda -->
-        <div id="content"></div>
-    </main>
-    <footer></footer>
 
-    <script src="app.js" defer></script>
+<body>
+    <header class="cabecalho">
+    <nav class="cabecalho__menu">
+      <a class="cabecalho__menu__link" onclick="navegar('home')">Home</a>
+      <a class="cabecalho__menu__link" onclick="navegar('sobre')">Sobre</a>
+      <a class="cabecalho__menu__link" onclick="navegar('contato')">Contato</a>
+    </nav>
+  </header>
+
+  <!-- Área principal onde as páginas aparecem -->
+  <main id="content" class="apresentacao"></main>
+
+  <!-- Rodapé -->
+  <footer class="rodape">
+    <p>Desenvolvido por Alexandre</p>
+  </footer>
+
+  <!-- Páginas escondidas (apenas fonte para o JS) -->
+  <div id="home" class="pagina">
+    <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__conteudo__titulo">
+        Bem-vindo ao <strong class="titulo-destaque">meu SPA</strong> 🎉
+      </h1>
+      <p class="apresentacao__conteudo__texto">
+        Este é um exemplo de Single Page Application (SPA) feito em HTML + JS puro,
+        com o estilo baseado no seu CSS.
+      </p>
+    </section>
+  </div>
+
+  <div id="sobre" class="pagina">
+    <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__conteudo__titulo">ℹ️ Sobre</h1>
+      <p class="apresentacao__conteudo__texto">
+        Este site foi criado para demonstrar como funciona uma SPA simples,
+        usando apenas HTML, CSS e JavaScript.
+      </p>
+      <p class="apresentacao__conteudo__texto">
+        Repare que o conteúdo troca sem recarregar a página 😉
+      </p>
+    </section>
+  </div>
+
+  <div id="contato" class="pagina">
+    <section class="apresentacao__conteudo">
+      <h1 class="apresentacao__conteudo__titulo">📞 Contato</h1>
+      <p class="apresentacao__conteudo__texto">
+        Você pode entrar em contato comigo pelo e-mail:
+      </p>
+      <a class="apresentacao__links__link" href="mailto:teste@email.com">
+        ✉️ Enviar E-mail
+      </a>
+    </section>
+  </div>
+
+  <script src="app.js" defer></script>
 </body>
 </html>
