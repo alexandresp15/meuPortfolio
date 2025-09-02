@@ -2,9 +2,9 @@
 
 :root {
     --cor-primaria: #000000;
-    --cor-secundaria: #F6F6F6;
+    --cor-secundaria: #EEEEEE;
     --cor-terciaria: #22D4FD;
-    --cor-hover: #272727;
+    --cor-hover: #393E46;
 
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
@@ -105,4 +105,9 @@ body{
 /* Esconde as rotas originais */
 .pagina {
     display: none;
+}
+.foto-perfil {
+  border-radius: 12px;
+  border: 3px solid var(--cor-terciaria);
+  max-width: 400px;
 }
