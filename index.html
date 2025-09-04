@@ -2,93 +2,29 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexandre S Pereira</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alexandre S Pereira</title>
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
-    <header class="cabecalho">
+  <header class="cabecalho">
     <nav class="cabecalho__menu">
-      <a class="cabecalho__menu__link" onclick="navegar('home')">Home</a>
-      <a class="cabecalho__menu__link" onclick="navegar('sobre')">Sobre mim</a>
-      <a class="cabecalho__menu__link" onclick="navegar('contato')">Contato</a>
+      <a class="cabecalho__menu__link" onclick="navegar('home.html')">Home</a>
+      <a class="cabecalho__menu__link" onclick="navegar('sobre.html')">Sobre mim</a>
+      <a class="cabecalho__menu__link" onclick="navegar('contato.html')">Contato</a>
     </nav>
   </header>
 
   <!-- Área principal onde as páginas aparecem -->
   <main id="content" class="apresentacao"></main>
 
-  <!-- Rodapé -->
   <footer class="rodape">
-    <p>Desenvolvido por Alexandre</p>
+    <p>© 2025 Alexandre Pereira — Desenvolvedor em formação</p>
   </footer>
 
-  <!-- Páginas escondidas (apenas fonte para o JS) -->
-  <div id="home" class="pagina">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">
-        Construindo projetos em Java, <strong class="titulo-destaque">para transformar ideias em realidade</strong> 
-      </h1>
-      <p class="apresentacao__conteudo__texto">Olá! Sou Alexandre S Pereira, 
-      desenvolvedor backend em formação com foco em Java. 
-      Estou em transição de carreira da área de Suporte de TI para o desenvolvimento, 
-      construindo projetos práticos e buscando minha primeira oportunidade como Programador Java Júnior. 
-      Vamos conversar?</p>
-      <div class="apresentacao__links">
-        <h2 class="apresentacao__links__subtitulo">Acesse minhas redes</h2>
-        <a class="apresentacao__links__navegacao" href="https://github.com/alexandresp15">
-            <img src="./assets/github.png">
-            Github
-        </a>
-        <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/alexandresp15">
-            <img src="./assets/linkedin.png">
-            linkedin
-        </a>
-        <a class="apresentacao__links__navegacao" href="https://instagram.com/">
-            <img src="./assets/instagram.png">
-            instagram 
-        </a>
-      </div>
-    </section>
-    <img src="./assets/imagem.jpg" alt="Foto de Alexandre" class="apresentacao__foto">
-  </div>
-
-  <div id="sobre" class="pagina">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">Sobre mim</h1>
-      <p class="apresentacao__conteudo__texto">
-        Sou Alexandre Pereira, profissional de TI em transição para a área de desenvolvimento de software. 
-        Atuo há alguns anos com suporte e infraestrutura, experiência que me deu uma base sólida 
-        para entender como a tecnologia pode resolver problemas reais dentro das empresas.
-      </p>
-      <p class="apresentacao__conteudo__texto">
-        Atualmente, estou focado no aprendizado em Java, desenvolvendo projetos práticos para consolidar meus conhecimentos. 
-        Estou cursando a formação ONE (Oracle Next Education) em parceria com a Alura, 
-        continuo ampliando minhas habilidades em desenvolvimento web e boas práticas de programação.
-      </p>
-      <p class="apresentacao__conteudo__texto">
-        Busco minha primeira oportunidade como Programador Java Júnior, 
-        onde poderei aplicar minha experiência em TI e meu aprendizado em desenvolvimento para criar soluções 
-        eficientes, escaláveis e que gerem valor para pessoas e negócios.
-      </p>
-    </section>
-  </div>
-
-  <div id="contato" class="pagina">
-    <section class="apresentacao__conteudo">
-      <h1 class="apresentacao__conteudo__titulo">📞 Contato</h1>
-      <p class="apresentacao__conteudo__texto">
-        Você pode entrar em contato comigo pelo e-mail:
-      </p>
-      <a class="apresentacao__links__link" href="mailto:alexandresp15@email.com">
-        ✉️ Enviar E-mail
-      </a>
-    </section>
-  </div>
-
-  <script src="app.js" defer></script>
+  <script src="scripts/app.js" defer></script>
 </body>
 </html>
